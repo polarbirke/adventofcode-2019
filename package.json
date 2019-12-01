@@ -1,0 +1,24 @@
+{
+  "name": "adventofcode-2019",
+  "version": "1.0.0",
+  "description": "Advent of Code 2019 in JavaScript",
+  "repository": "https://github.com/polarbirke/adventofcode-2019",
+  "author": "polarbirke",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/register": "^7.6.2",
+    "@rollup/plugin-json": "^4.0.0",
+    "babel-tape-runner": "^3.0.0",
+    "gulp": "^4.0.2",
+    "rollup": "^1.22.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "test": "babel-tape-runner './test/**/*.js' | tap-spec"
+  }
+}
